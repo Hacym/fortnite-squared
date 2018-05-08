@@ -9,15 +9,18 @@ function getLocation() {
         url: "/location",
         extract: function(xhr) { return xhr.responseText }
     }).then(function(newLocation) {
-        m.render(dropLocation, m("p", ""));
-        locationHistory.unshift(newLocation)
+        m.render(dropLocation, m("p", ""))
         m.render(dropLocation, [
             m("p", "Head to"),
-            m("h3", {class: "is-size-2 animated bounce", id:"locationSquare"}, newLocation),
-            m("p", {class: "has-text-success"}, "Good luck!"),
+            m("h3", {class: "is-size-2 animated bounceInDown", id:"locationSquare"}, newLocation),
+            m("p", "and good luck!"),
+            m("br")
         ]);
+        m.render(historyLocation, m("p", ""))
+
+        locationHistory.unshift(newLocation)
         m.render(historyLocation, [
-            m("h3", {class: "is-size-3"}, locationHistory[0]),
+            m("h3", {class: "is-size-3 animated fadeIn"}, locationHistory[0]),
             m("h3", {class: "is-size-3"}, locationHistory[1]),
             m("h3", {class: "is-size-3", style: "opacity: .6"}, locationHistory[2]),
             m("h3", {class: "is-size-3", style: "opacity: .3"}, locationHistory[3]),

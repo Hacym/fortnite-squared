@@ -9,6 +9,8 @@ body {
     background-position: right bottom;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    border-top: 6px solid #366797;
+    border-bottom: 6px solid #E96967;
 }
 
 #content {
