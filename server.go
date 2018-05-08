@@ -43,7 +43,7 @@ func is_excluded(location string) bool {
 func generate_location() string {
     vert := [...]string{"A", "B", "C", "D", "E", "F", "J", "H", "I", "J"}
 
-    rand.Seed(time.Now().Unix())
+    rand.Seed(time.Now().UTC().UnixNano())
 
     excluded := true
     var location string
