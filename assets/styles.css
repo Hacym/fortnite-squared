@@ -1,4 +1,12 @@
+body {
+    border-top: 2px solid #366797;
+}
+
 #content {
     height: 500px;
     display: flex;
+}
+
+#history {
+    height: 100px;
 }
