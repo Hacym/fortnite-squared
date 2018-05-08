@@ -1,10 +1,19 @@
+html,
 body {
-    border-top: 2px solid #366797;
+    height: 100%;
+}
+
+body {
+    background-color: #ECECEC;
+    background-image: url("/static/img/cash.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 #content {
+    padding-top: 100px;
     height: 500px;
-    display: flex;
 }
 
 #history {
