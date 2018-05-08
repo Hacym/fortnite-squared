@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Fornite&#178;</title>
+    <link rel="stylesheet" href="//unpkg.com/bulmaswatch/journal/bulmaswatch.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="//unpkg.com/mithril/mithril.js"></script>
+</head>
+
+<body>
+    <div class="columns is-vcentered" id="content">
+        <div class="column has-text-centered">
+            <h1 id="title" class="title"><span class="has-text-primary">Fortnite</span>&#178;</h1>
+            <h2 id="subtitle" class="subtitle">Drop location picker</h2>
+            <div id="location">
+            </div>
+            <button class="button is-link" onclick="getLocation()">Get new location</button>
+            <p class="has-text-success">Good luck!</p>
+        </div>
+    </div>
+    <script src="static/js/app.js"></script>
+</body>
+</html>
